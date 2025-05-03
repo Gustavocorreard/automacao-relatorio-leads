@@ -69,5 +69,5 @@ automacao-relatorio/
 
 ## 📬 Contato
 
-Feito por **@pyautoGus** — Automação com humor e propósito.  
-Conecte-se no [LinkedIn](https://www.linkedin.com) ou envie um pull request!
+Feito por **@pyautoGus**. 
+Meu perfil no [LinkedIn]([https://www.linkedin.com/in/gustavo-correard/])
