@@ -1,0 +1,10 @@
+
+# Arquivos e pastas a serem ignorados
+__pycache__/
+*.pyc
+*.pyo
+*.pdf
+output/
+*.xlsx
+.DS_Store
+.ipynb_checkpoints/
