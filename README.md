@@ -70,4 +70,4 @@ automacao-relatorio/
 ## 📬 Contato
 
 Feito por **@pyautoGus**. 
-Meu perfil no [LinkedIn]([https://www.linkedin.com/in/gustavo-correard/])
+Meu perfil no [LinkedIn](https://www.linkedin.com/in/gustavo-correard/)
