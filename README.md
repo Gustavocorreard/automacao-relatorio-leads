@@ -1,73 +1,103 @@
 
-# 📊 Projeto: Automação de Relatório de Leads com Python
+# 📧 Automação de Relatórios de Leads por E-mail
 
-Este projeto demonstra como automatizar a geração de um relatório com dados de leads utilizando Python.  
-Ele inclui leitura de planilha, análise de dados, geração de gráficos e envio automático de e-mail com PDF.
-
----
-
-## 🔧 Tecnologias Utilizadas
-
-- Python 3.10+
-- pandas
-- matplotlib
-- fpdf
-- yagmail
-- Jupyter Notebook (opcional)
+Este projeto tem como objetivo automatizar o envio de relatórios de leads por e-mail, utilizando Python. A automação permite gerar e enviar arquivos de forma recorrente, reduzindo tarefas manuais e otimizando processos operacionais.
 
 ---
 
-## 🧭 Etapas do Projeto
+## 🎯 Objetivo
 
-1. Leitura dos dados de leads (`leads.xlsx`)
-2. Análise de dados: canais de aquisição e status dos leads
-3. Geração de dois gráficos:
-   - Leads por Canal
-   - Status dos Leads
-4. Exportação para um PDF automático
-5. Envio do relatório por e-mail com `yagmail`
+- Gerar um relatório em CSV com dados de leads (simulado ou real).
+- Enviar esse relatório automaticamente por e-mail, utilizando Python.
 
 ---
 
-## 🚀 Como Rodar o Projeto
+## 🔧 Funcionalidades
 
-### 🔹 Versão Notebook:
-1. Abra o arquivo `automacao_relatorio_leads.ipynb` no Jupyter ou Google Colab
-2. Execute as células em ordem
-
-### 🔹 Versão Script:
-1. Instale as dependências:  
-   ```bash
-   pip install pandas matplotlib fpdf yagmail
-   ```
-2. Execute:  
-   ```bash
-   python automacao_relatorio_leads.py
-   ```
+- 📊 Leitura de dados de leads (planilhas, bases .csv, ou outras fontes).
+- 📤 Geração de relatório consolidado.
+- ✉️ Envio automático do relatório via e-mail para destinatários definidos.
 
 ---
 
-## 🛡️ Segurança
-Para enviar e-mails via Gmail, é necessário usar uma [senha de app](https://myaccount.google.com/apppasswords).
+## 🚀 Como Executar o Projeto
 
----
+### ✅ Pré-requisitos:
 
-## 📁 Estrutura do Projeto
+- Python 3.x instalado
+- Conta de e-mail (Gmail, Outlook, etc.) com acesso SMTP liberado
+- Configuração de senha de aplicativo (para Gmail, por exemplo)
 
-```
-automacao-relatorio/
-├── dados/                        # Planilha de entrada
-├── output/                       # Gráficos e relatórios gerados
-├── scripts/
-│   ├── automacao_relatorio_leads.ipynb
-│   └── automacao_relatorio_leads.py
-├── README.md
-└── .gitignore
+### ✅ Instalação:
+
+1. Clone o repositório:
+```bash
+git clone https://github.com/Gustavocorreard/automacao-relatorio-leads.git
+cd automacao-relatorio-leads
 ```
 
+2. Crie um ambiente virtual (opcional, mas recomendado):
+```bash
+python -m venv .venv
+source .venv/bin/activate  # Linux/Mac
+.venv\Scripts\activate   # Windows
+```
+
+3. Instale as dependências:
+```bash
+pip install -r requirements.txt
+```
+
+### ✅ Configuração do E-mail:
+
+No script `enviar_relatorio.py`, altere as variáveis:
+
+```python
+EMAIL_ORIGEM = "seuemail@gmail.com"
+SENHA = "sua_senha_de_aplicativo"
+EMAIL_DESTINO = "destinatario@email.com"
+```
+
+### ✅ Execução:
+
+Execute o script:
+
+```bash
+python src/enviar_relatorio.py
+```
+
+Ou rode o notebook:
+
+```bash
+notebooks/automacao_relatorio_leads.ipynb
+```
+
 ---
 
-## 📬 Contato
+## 📚 Tecnologias e Bibliotecas
 
-Feito por **@pyautoGus**. 
-Meu perfil no [LinkedIn](https://www.linkedin.com/in/gustavo-correard/)
+- Python 3
+- Pandas
+- smtplib (envio de e-mails)
+- email.message (construção do e-mail)
+- os / datetime (para manipulação de arquivos)
+
+---
+
+## 🛡️ Observações de Segurança
+
+> ⚠️ **Importante:** Nunca compartilhe sua senha de e-mail diretamente no código. Utilize variáveis de ambiente ou arquivos `.env` para proteger suas credenciais.
+
+---
+
+## 📌 Conclusão
+
+Automatizar tarefas como o envio de relatórios ajuda empresas a ganharem eficiência, reduzir erros e otimizar tempo. Este projeto demonstra como Python pode ser uma poderosa ferramenta para automações de processos corporativos.
+
+---
+
+## 👨‍💻 Autor
+
+**Gustavo Correard**  
+🔗 [LinkedIn](https://www.linkedin.com/in/gustavocorreard/)  
+🔗 [GitHub](https://github.com/Gustavocorreard)

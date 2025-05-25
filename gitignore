@@ -5,6 +5,5 @@ __pycache__/
 *.pyo
 *.pdf
 output/
-*.xlsx
 .DS_Store
 .ipynb_checkpoints/
