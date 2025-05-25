@@ -7,7 +7,7 @@ Este projeto tem como objetivo automatizar o envio de relatórios de leads por e
 
 ## 🎯 Objetivo
 
-- Gerar um relatório em CSV com dados de leads (simulado ou real).
+- Gerar um relatório em CSV com dados de leads.
 - Enviar esse relatório automaticamente por e-mail, utilizando Python.
 
 ---
